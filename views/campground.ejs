@@ -1,0 +1,11 @@
+<h1>Welcome To Campgrounds Page</h1>
+<a href="/campgrounds/new">Create new comment</a>
+
+<% campgrounds.forEach(function(x){ %>
+	<div>
+		<p><%=x.name%></p>
+		<img src="<%=x.image%>">
+	</div>
+	        <a href="/campgrounds/<%=x._id%>">Read More</a>
+	
+<%})%>
